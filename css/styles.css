@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url(/assets/mac.jpeg);
+    height: 40em;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 34em;
+    grid-auto-flow: column;
+}
+
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.enlaces>a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.presentacion {
+    grid-column: 2/3;
+    padding: 0 70px;
+    color: white;
+}
+
+.presentacion>h1 {
+    font-size: 40px;
+    margin: 25px 0px;
+}
+
+.presentacion h1>span {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Carter One', cursive;
+}
+
+.presentacion>p {
+    margin: 25px 0px;
+}
+
+.presentacion button {
+    float: right;
+    padding: 10px 30px;
+    font-size: 17px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid white;
+    /* Otro color 2176FF */
+    background: #083D77;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+
+.about {
+    height: 25em;
+    padding: 55px 6%;
+    background: #EBF2FA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4em 21em;
+}
+
+.about>h2 {
+    text-align: center;
+    grid-column: 1/3;
+    font-size: 30px;
+}
+
+.description {
+    grid-column: 1/2;
+    padding: 0 40px;
+}
+
+.description>h3 {
+    font-size: 25px;
+}
+
+.description p {
+    font-weight: 550;
+}
+
+.me {
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.me img {
+    width: 100%;
+    height: 19em;
+}
+
+.skills {
+    background: #171D1C;
+    color: white;
+    padding: 30px 10%;
+}
+
+.skills>h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.division {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2%;
+    row-gap: 20px;
+    margin: 30px 0px;
+}
+
+.content {
+    background: #292b2bd8;
+    height: 420px;
+    overflow: hidden;
+}
+
+.item {
+    background: #083D77;
+    width: 100%;
+    height: 47%;
+    position: relative;
+    clip-path: circle(180px at center -10%);
+    text-align: center;
+}
+
+.item>i {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.item>h3 {
+    font-size: 25px;
+}
+
+.moreSkill {
+    padding: 20px 40px;
+    margin: -20px 0px;
+}
+
+.moreSkill>button {
+    border: 1px solid white;
+    background: #083D77;
+    color: white;
+    font-size: 17px;
+    padding: 5px 17px;
+    margin: 15px 0px;
+    float: right;
+}
+
+.testimonial {
+    display: grid;
+    height: 20em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2em 15em;
+    padding: 50px 5%;
+    column-gap: 5%;
+    row-gap: 40px;
+    background: #EBF2FA;
+}
+
+.testimonial>h3 {
+    text-align: center;
+    grid-column: 1/3;
+    font-size: 30px;
+}
+
+.testimonial>.card {
+    background: #083D77;
+    color: white;
+    padding: 30px;
+}
+
+.card>.autor {
+    float: right;
+    margin: 25px 0;
+}
+
+.contact {
+    background: #171D1C;
+    color: white;
+    display: grid;
+    height: 34em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2em 15em;
+    padding: 0 7%;
+    column-gap: 2%;
+    row-gap: 40px;
+}
+
+.contact>h3 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+    grid-column: 1/3;
+}
+
+.info>h3 {
+    font-size: 22px;
+    margin: 25px 0;
+}
+
+.tipoDato {
+    display: flex;
+}
+
+.tipoDato i {
+    font-size: 20px;
+    color: #083D77;
+}
+
+.tipoDato>h4 {
+    margin-left: 20px;
+}
+
+.dato>p {
+    margin-left: 60px;
+    font-size: 18px;
+}
+
+.form>h4 {
+    font-size: 22px;
+    margin: 25px 0;
+}
+
+form input[type="text"],
+input[type="email"],
+textarea {
+    background: #292b2bd8;
+    border: 0;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    background: #083D77;
+    border: 1px solid white;
+    padding: 5px 25px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
