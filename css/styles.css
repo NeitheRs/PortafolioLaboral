@@ -6,7 +6,7 @@
 }
 
 header {
-    background: url(/assets/mac.jpeg);
+    background: url(../assets/mac.jpeg);
     height: 40em;
     background-position: center;
     background-size: cover;
